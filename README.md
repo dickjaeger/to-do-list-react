@@ -94,7 +94,7 @@
 
   
 
-![Example screenshot](./images/screenshot.jpg)
+![Example screenshot](./public/images/screenshot.jpg)
 
   
 

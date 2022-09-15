@@ -5,9 +5,9 @@ const SectionButtons = (props) => (
         <button className="section__button">
             {props.readyTasksHidden ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
-        <button 
-        className="section__button"
-        disabled={props.tasks.every(({ done }) => done )} 
+        <button
+            className="section__button"
+            disabled={props.tasks.every(({ done }) => done)}
         >
             Ukończ wszystkie
         </button>

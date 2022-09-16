@@ -42,6 +42,10 @@ function App() {
     }))
   }
 
+  const toggleReadyTasksHidden = () => {
+    setReadyTasksHidden(!readyTasksHidden);
+  }
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -55,7 +59,11 @@ function App() {
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone}
         />}
-        extraContent={<SectionButtons tasks={tasks} readyTasksHidden={readyTasksHidden} />}
+        extraContent={<SectionButtons
+          tasks={tasks}
+          readyTasksHidden={readyTasksHidden}
+          toggleReadyTasksHidden={toggleReadyTasksHidden}
+        />}
       />
     </Container>
   );

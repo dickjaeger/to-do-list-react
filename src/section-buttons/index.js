@@ -2,7 +2,7 @@ import "./style.css";
 
 const SectionButtons = (props) => (
     <div className="section__buttonsContainer">
-        <button className="section__button">
+        <button className="section__button" onClick={props.toggleReadyTasksHidden}>
             {props.readyTasksHidden ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
         <button

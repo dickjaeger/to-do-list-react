@@ -8,6 +8,7 @@ const SectionButtons = (props) => (
         <button
             className="section__button"
             disabled={props.tasks.every(({ done }) => done)}
+            onClick={props.setAllTasksReady}
         >
             Ukończ wszystkie
         </button>

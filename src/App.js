@@ -15,14 +15,22 @@ function App() {
   ]);
 
   const addNewTask = (content) => {
-    setTasks (tasks => [
+    if (!content) {
+      return
+    }
+
+    setTasks(tasks => [
       ...tasks,
       {
         content,
         done: false,
-        id: tasks.lenght ? tasks[tasks.lenght - 1].id + 1 : 1,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       }
     ])
+  }
+
+  const removeTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id))
   }
 
   return (
@@ -32,7 +40,11 @@ function App() {
         body={<Form addNewTask={addNewTask} />}
       />
       <Section title="Lista zadań"
-        body={<Tasks tasks={tasks} readyTasksHidden={readyTasksHidden} />}
+        body={<Tasks
+          tasks={tasks}
+          readyTasksHidden={readyTasksHidden}
+          removeTask={removeTask}
+        />}
         extraContent={<SectionButtons tasks={tasks} readyTasksHidden={readyTasksHidden} />}
       />
     </Container>

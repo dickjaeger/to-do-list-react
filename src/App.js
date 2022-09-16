@@ -30,7 +30,16 @@ function App() {
   }
 
   const removeTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id))
+    setTasks(tasks => tasks.filter((task) => task.id !== id))
+  }
+
+  const toggleTaskDone = (id) => {
+    setTasks(tasks => tasks.map((task) => {
+      if (task.id !== id) {
+        return task;
+      }
+      return { ...task, done: !task.done };
+    }))
   }
 
   return (
@@ -44,6 +53,7 @@ function App() {
           tasks={tasks}
           readyTasksHidden={readyTasksHidden}
           removeTask={removeTask}
+          toggleTaskDone={toggleTaskDone}
         />}
         extraContent={<SectionButtons tasks={tasks} readyTasksHidden={readyTasksHidden} />}
       />

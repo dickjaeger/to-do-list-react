@@ -6,7 +6,7 @@
 
   
 
-> Live demo [_here_](https://dickjaeger.github.io/to-do-list/).
+> Live demo [_here_](https://dickjaeger.github.io/to-do-list-react/).
 
   
 

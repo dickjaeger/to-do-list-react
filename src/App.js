@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Form from './form/index.js';
 import Tasks from './tasks/index.js';
@@ -9,7 +9,12 @@ import Container from './container/index.js';
 
 function App() {
   const [readyTasksHidden, setReadyTasksHidden] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
 
   const addNewTask = (content) => {
     if (!content) {

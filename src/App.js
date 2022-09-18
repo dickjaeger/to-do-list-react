@@ -9,10 +9,7 @@ import Container from './container/index.js';
 
 function App() {
   const [readyTasksHidden, setReadyTasksHidden] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "pozmywać naczynia", done: false },
-    { id: 2, content: "odrobić zadanie z YouCode", done: true },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const addNewTask = (content) => {
     if (!content) {

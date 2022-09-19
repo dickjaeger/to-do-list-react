@@ -1,4 +1,4 @@
-import "./style.css";
+import { Button, ButtonsContainer } from "./styled";
 
 const SectionButtons = (props) => {
     if (props.tasks.length === 0) {
@@ -6,18 +6,17 @@ const SectionButtons = (props) => {
     }
 
     return (
-        <div className="section__buttonsContainer">
-            <button className="section__button" onClick={props.toggleReadyTasksHidden}>
+        <ButtonsContainer>
+            <Button onClick={props.toggleReadyTasksHidden}>
                 {props.readyTasksHidden ? "Pokaż ukończone" : "Ukryj ukończone"}
-            </button>
-            <button
-                className="section__button"
+            </Button>
+            <Button
                 disabled={props.tasks.every(({ done }) => done)}
                 onClick={props.setAllTasksReady}
             >
                 Ukończ wszystkie
-            </button>
-        </div>
+            </Button>
+        </ButtonsContainer>
     )
 }
 

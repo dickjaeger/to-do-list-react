@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './App.css';
 import Form from './form/index.js';
 import Tasks from './tasks/index.js';
 import Section from './section/index.js';

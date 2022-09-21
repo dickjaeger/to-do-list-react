@@ -65,13 +65,15 @@
   
 - React 18
 
+- Redux
+
 - Javascript ES6
 
 - HTML 5
 
 - CSS
 
-- BEM convention
+- Styled Components
 
 
   
@@ -82,11 +84,13 @@
 
 - Adding/removing your tasks
 
-- Marking ready tasks
+- Marking done tasks
 
-- Hiding ready tasks 
+- Hiding done tasks 
 
-- Setting all tasks ready with one button
+- Setting all tasks done with one button
+
+- Saving your tasks in your Local Storage
 
   
 

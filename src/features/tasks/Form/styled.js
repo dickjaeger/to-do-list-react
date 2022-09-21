@@ -24,6 +24,7 @@ export const Button = styled.button`
     color: #fff;
     margin-left: 15px;
     transition: 0.2s;
+    cursor: pointer;
 
     @media (max-width: 767px) {
         flex-grow: 1;

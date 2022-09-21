@@ -1,11 +1,11 @@
-import { Section as StyledSection, SectionHeader } from "./styled"
+import { Section as StyledSection, SectionHeader, Title } from "./styled"
 
 const Section = (props) => (
   <StyledSection>
     <SectionHeader>
-      <h2>
+      <Title>
         {props.title}
-      </h2>
+      </Title>
       {props.extraContent}
     </SectionHeader>
     {props.body}

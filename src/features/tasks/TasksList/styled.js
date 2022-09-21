@@ -24,6 +24,7 @@ export const Button = styled.button`
     height: 30px;
     width: 30px;
     transition: 0.2s;
+    cursor: pointer;
 
     ${({ toggleDone }) => toggleDone && css`
         background-color: green;

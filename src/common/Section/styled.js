@@ -21,3 +21,7 @@ export const SectionHeader = styled.div`
         flex-wrap: wrap;
     }
 `
+
+export const Title = styled.h2`
+    margin: 0;
+`

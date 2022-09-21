@@ -1,23 +1,28 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { selectTasks, setAllTasksDone, toggleDoneTasksHidden } from '../tasksSlice';
 import { Button, ButtonsContainer } from "./styled";
 
-const SectionButtons = (props) => {
-    if (props.tasks.length === 0) {
+const SectionButtons = () => {
+    const { tasks, doneTasksHidden } = useSelector(selectTasks);
+    const dispatch = useDispatch();
+
+    if (tasks.length === 0) {
         return;
-    }
+    };
 
     return (
         <ButtonsContainer>
-            <Button onClick={props.toggleReadyTasksHidden}>
-                {props.readyTasksHidden ? "Pokaż ukończone" : "Ukryj ukończone"}
+            <Button onClick={() => {dispatch(toggleDoneTasksHidden())}}>
+                {doneTasksHidden ? "Pokaż" : "Ukryj"} ukończone
             </Button>
             <Button
-                disabled={props.tasks.every(({ done }) => done)}
-                onClick={props.setAllTasksReady}
+                disabled={tasks.every(({ done }) => done)}
+                onClick={() => dispatch(setAllTasksDone())}
             >
                 Ukończ wszystkie
             </Button>
         </ButtonsContainer>
-    )
-}
+    );
+};
 
 export default SectionButtons;

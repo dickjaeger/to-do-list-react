@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectTasks, setAllTasksDone, toggleDoneTasksHidden } from '../tasksSlice';
-import { Button, ButtonsContainer } from "./styled";
+import { selectTasks, setAllTasksDone, toggleDoneTasksHidden } from '../../tasksSlice';
+import { Button, ButtonsContainer } from "../../../../common/styled";
 
-const SectionButtons = () => {
+const TasksButtons = () => {
     const { tasks, doneTasksHidden } = useSelector(selectTasks);
     const dispatch = useDispatch();
 
@@ -25,4 +25,4 @@ const SectionButtons = () => {
     );
 };
 
-export default SectionButtons;
+export default TasksButtons;

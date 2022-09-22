@@ -9,14 +9,6 @@ export const Form = styled.form`
     }
 `
 
-export const Input = styled.input`
-    flex-basis: 100px;
-    flex-grow: 1;
-    overflow: hidden;
-    padding: 7px;
-    border: 1px solid #ddd;
-`
-
 export const Button = styled.button`
     padding: 7px;
     border: none;

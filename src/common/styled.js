@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Container = styled.main`
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+`
+
 export const Button = styled.button`
     border: none;
     background-color: #fff;
@@ -18,6 +24,14 @@ export const Button = styled.button`
     &:disabled {
         color: #ddd;
     }
+`
+
+export const Input = styled.input`
+    flex-basis: 100px;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 7px;
+    border: 1px solid #ddd;
 `
 
 export const ButtonsContainer = styled.div`

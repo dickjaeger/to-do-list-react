@@ -70,8 +70,7 @@ export const selectTasksByQuery = (state, query) => {
         content.toUpperCase().includes(query.trim().toUpperCase()));
 };
 
-
-export const getTaskById = (state, taskId) =>
+export const selectTaskById = (state, taskId) =>
     selectTasks(state).find(({ id }) => id === taskId);
 
 export default tasksSlice.reducer;

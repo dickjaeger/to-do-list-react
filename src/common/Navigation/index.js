@@ -14,13 +14,6 @@ const Navigation = ({ pages }) => (
                 ))}
             </List>
         </Container>
-        <Switch>
-            {pages.map(page => (
-                <Route path={page.path} key={page.path}>
-                    {page.component}
-                </Route>
-            ))}
-        </Switch>
     </>
 );
 

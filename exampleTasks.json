@@ -1,0 +1,17 @@
+[
+    {
+        "content": "Nauczyć się Reduxa",
+        "id": "1",
+        "done": true
+    },
+    {
+        "content": "Odrobić zadanie domowe z YouCode",
+        "id": "2",
+        "done": true
+    },
+    {
+        "content": "Świętować",
+        "id": "3",
+        "done": false
+    }
+]

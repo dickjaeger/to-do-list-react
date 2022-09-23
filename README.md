@@ -63,9 +63,9 @@
 ## Technologies Used
 
   
-- React 18
+- React 18 (with React Router)
 
-- Redux
+- Redux (with Redux Saga)
 
 - Javascript ES6
 
@@ -91,6 +91,12 @@
 - Setting all tasks done with one button
 
 - Saving your tasks in your Local Storage
+
+- Filtering your tasks (just type in the appropriate field)
+
+- Downloading example tasks
+
+- Read more about the app author
 
   
 

@@ -6,8 +6,8 @@ import { setTasksInLocalStorage } from './tasksLocalStorage'
 function* fetchExampleTasksHandler() {
     try {
         yield put(setLoading(true));
-        const exampleTasks = yield call(getExampleTasks);
         yield delay(2000);
+        const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks));
         yield put(setLoading(false));
     } catch (error) {

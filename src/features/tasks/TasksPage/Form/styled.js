@@ -5,8 +5,8 @@ export const Form = styled.form`
 
     @media (max-width: 767px){
         flex-wrap: wrap;
-    }
-`
+    };
+`;
 
 export const Button = styled.button`
     padding: 7px;
@@ -21,14 +21,14 @@ export const Button = styled.button`
         flex-grow: 1;
         flex-basis: 100%;
         margin: 10px 0; 
-    }
+    };
 
     &:hover {
         background-color: hsl(180, 100%, 27%);
         transform: scale(1.1);
-    }
+    };
 
     &:active {
         background-color: hsl(180, 100%, 30%); 
-    }
-`
+    };
+`;

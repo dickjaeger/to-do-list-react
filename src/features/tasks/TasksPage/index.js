@@ -7,7 +7,7 @@ import TasksButtons from './TasksButtons';
 import ExampleTasksButton from "./ExampleTasksButton";
 import Search from "./Search";
 
-const Tasks = () => (
+const TasksPage = () => (
   <Container>
     <Header title="Lista zadań" />
     <Section
@@ -28,4 +28,4 @@ const Tasks = () => (
 );
 
 
-export default Tasks;
+export default TasksPage;

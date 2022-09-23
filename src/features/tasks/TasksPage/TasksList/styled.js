@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
     list-style-type: none;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 `
 
 export const ListItem = styled.li`
@@ -51,12 +53,18 @@ export const Button = styled.button`
     `}
 `
 
-export const TextContainer = styled.div`
+export const TaskLink = styled(Link)`
     word-break: break-word;
     flex-grow: 1;
     margin: 0 15px;
+    text-decoration: none;
+    color: black;
 
-    ${({ done }) => done && css`
+    &:hover {
+        font-weight: bold;
+    }
+
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
 `

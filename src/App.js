@@ -1,6 +1,7 @@
-import { HashRouter } from 'react-router-dom'
-import Tasks from './features/tasks/TasksPage';
-import Author from './features/author/AuthorPage'
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import TasksPage from './features/tasks/TasksPage';
+import TaskPage from './features/tasks/TaskPage';
+import AuthorPage from './features/author/AuthorPage';
 import Navigation from './common/Navigation';
 
 const App = () => (
@@ -9,14 +10,22 @@ const App = () => (
       {
         path: "/zadania",
         title: "Lista zadań",
-        component: <Tasks />
+        component: <TasksPage />
       },
       {
         path: "/autor",
         title: "O autorze",
-        component: <Author />
-      }
+        component: <AuthorPage />
+      },
     ]} />
+    <Switch>
+      <Route path="/szczegoly-zadania/:id">
+        <TaskPage />
+      </Route>
+      <Route path="/">
+        <Redirect to="/zadania" />
+      </Route>
+    </Switch>
   </HashRouter>
 );
 

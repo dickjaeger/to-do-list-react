@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectTasks, fetchExampleTasks } from '../../tasksSlice';
+import { selectIsLoading, selectError, fetchExampleTasks } from '../../tasksSlice';
 import { Button, ButtonsContainer } from "../../../../common/styled";
 import { Error } from './styled';
 
 const ExampleTasksButton = () => {
-    const { loading, error } = useSelector(selectTasks);
+    const loading = useSelector(selectIsLoading);
+    const error = useSelector(selectError);
     const dispatch = useDispatch();
 
     return (

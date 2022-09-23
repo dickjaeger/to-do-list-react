@@ -6,6 +6,10 @@ export const Section = styled.section`
     box-shadow: #ddd 2px 2px 5px;
 `
 
+export const SectionBody = styled.div`
+    padding: 20px;
+`
+
 export const SectionHeader = styled.div`
     display: flex;
     align-items: center;

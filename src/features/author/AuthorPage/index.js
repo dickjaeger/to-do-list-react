@@ -2,7 +2,7 @@ import { Container } from '../../../common/styled';
 import Header from '../../../common/Header';
 import Section from '../../../common/Section';
 
-const Tasks = () => (
+const AuthorPage = () => (
   <Container>
     <Header title="O autorze" />
     <Section
@@ -13,4 +13,4 @@ const Tasks = () => (
 );
 
 
-export default Tasks;
+export default AuthorPage;

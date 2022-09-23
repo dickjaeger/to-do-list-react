@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Form = styled.form`
     display: flex;
-    padding: 20px;
 
     @media (max-width: 767px){
         flex-wrap: wrap;

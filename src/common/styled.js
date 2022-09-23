@@ -8,6 +8,7 @@ export const Container = styled.main`
 
 export const Button = styled.button`
     border: none;
+    margin-top: 10px;
     background-color: #fff;
     color: teal;
     transition: 0.2s;
@@ -37,5 +38,7 @@ export const Input = styled.input`
 export const ButtonsContainer = styled.div`
     @media (max-width: 767px) {
         align-self: center;
+        display: flex;
+        flex-direction: column;
     }
 `

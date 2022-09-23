@@ -4,11 +4,11 @@ export const Section = styled.section`
     background-color: #fff;
     margin: 10px 0;
     box-shadow: #ddd 2px 2px 5px;
-`
+`;
 
 export const SectionBody = styled.div`
     padding: 20px;
-`
+`;
 
 export const SectionHeader = styled.div`
     display: flex;
@@ -23,9 +23,9 @@ export const SectionHeader = styled.div`
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
-    }
-`
+    };
+`;
 
 export const Title = styled.h2`
     margin: 0;
-`
+`;

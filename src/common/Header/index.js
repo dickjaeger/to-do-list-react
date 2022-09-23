@@ -4,6 +4,6 @@ const Header = ({ title }) => (
             {title}
         </h1>
     </header>
-)
+);
 
 export default Header;

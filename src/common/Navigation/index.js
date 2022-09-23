@@ -1,4 +1,3 @@
-import { Switch, Route } from 'react-router-dom'
 import { Container, List, StyledLink} from './styled';
 
 const Navigation = ({ pages }) => (

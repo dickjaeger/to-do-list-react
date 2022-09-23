@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
     width: 100%;
     background-color: teal;
-`
+`;
 
 export const List = styled.ul`
     list-style: none;
@@ -16,15 +16,18 @@ export const List = styled.ul`
 
     @media (max-width: 767px) {
         flex-wrap: wrap;
-    }
-`
+    };
+`;
 
 export const StyledLink = styled(NavLink)`
     margin: 0 15px;
     color: white;
     font-size: larger;
     text-decoration: none;
+    &:hover {
+        font-weight: bold;
+    };
     &.active {
         font-weight: bold;
-    }
-`
+    };
+`;
